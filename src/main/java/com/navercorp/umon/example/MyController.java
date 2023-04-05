@@ -2,13 +2,13 @@ package com.navercorp.umon.example;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/")
 public class MyController {
-    @GetMapping
-    public String test(String name) {
+    @GetMapping("/test")
+    public String test(@RequestParam("name") String name) {
         return "call url: http://{hostname}:{port}/name={value}<br>name = " + name;
     }
 }
