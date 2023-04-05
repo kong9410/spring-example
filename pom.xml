@@ -12,6 +12,7 @@
 
     <groupId>com.navercorp.umon</groupId>
     <artifactId>spring-example</artifactId>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <name>spring-boot-2</name>
